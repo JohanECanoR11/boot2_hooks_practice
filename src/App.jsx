@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { UseReducer } from './component/UseReducer';
+import { UseRef } from './component/UseRef';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,8 @@ function App() {
         </button>
         <hr />
       </div>
-      <UseReducer count ={count} setCount={setCount} />
+      <UseReducer />
+      <UseRef count ={count} setCount={setCount}/>
     </>
   )
 }

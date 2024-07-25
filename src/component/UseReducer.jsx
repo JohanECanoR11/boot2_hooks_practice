@@ -11,7 +11,7 @@ export const UseReducer = () => {
       case 'decrease':
         return { ... state, count: state.count - 1 };
       case 'reset':
-        return{ ... initialState };
+        return { ... initialState };
       default:
         throw new Error();
     }
